@@ -12,6 +12,7 @@ services:
       - key: PYTHON_VERSION
         value: 3.10
 
-  - type: static
+  - type: web
     name: indradhanu-frontend
+    env: static
     staticPublishPath: frontend
