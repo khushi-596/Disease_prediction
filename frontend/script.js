@@ -1,3 +1,5 @@
+const BASE_URL = "https://indradhanu-backend.onrender.com";
+
 document.getElementById("predictForm")?.addEventListener("submit", async (e) => {
   e.preventDefault();
   const payload = {
