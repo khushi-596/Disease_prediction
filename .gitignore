@@ -1,23 +1,58 @@
-# Node / frontend
-frontend/node_modules/
-frontend/build/
-frontend/.env
-frontend/.DS_Store
+%%writefile /content/Disease_prediction/.gitignore
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.h5
+*.log
+*.sqlite3
+*.db
 
-# Python / backend
-backend/__pycache__/
-backend/*.pyc
-backend/.env
-backend/models/*.h5
-backend/models/*.pkl
+# ---- Virtual Environment ----
+venv/
+env/
+.venv/
+ENV/
+.ipynb_checkpoints/
 
-# OS files
+# ---- Colab / Jupyter ----
+*.ipynb_checkpoints
+*.ipynb
+.colab/
+*.json
+
+# ---- Data ----
+/content/backend/data/raw_dataset.csv
+/content/backend/data/processed_dataset.csv
+*.csv
+*.xlsx
+*.xls
+
+# ---- Model Files ----
+/content/backend/models/
+*.pkl
+*.h5
+*.joblib
+
+# ---- Cache / Temp ----
+*.tmp
+*.bak
+*.swp
 .DS_Store
 Thumbs.db
+*.zip
 
-# IDE / editor
-.vscode/
-.idea/
-*.suo
-*.user
-*.log
+# ---- Node / Frontend ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ---- Render / Deployment ----
+*.env
+.env.local
+.env.production
+__pycache__/
