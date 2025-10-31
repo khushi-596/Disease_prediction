@@ -16,5 +16,4 @@ services:
     name: indradhanu-frontend
     env: static
     plan: free
-    region: oregon
     staticPublishPath: frontend
