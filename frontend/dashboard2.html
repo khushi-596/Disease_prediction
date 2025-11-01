@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ward Analytics</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - Indradhanu</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h2>📈 Ward-Level Analytics</h2>
-  <p>Graphs and insights will appear here...</p>
+  <div class="container fade-in">
+    <h2>🏢 Admin Dashboard</h2>
+
+    <div class="admin-buttons">
+      <button class="btn" onclick="loadWardAnalytics()">📊 Ward Analytics</button>
+      <button class="btn" onclick="loadAIPrediction()">🤖 AI Prediction</button>
+      <button class="btn" onclick="showHealthTips()">💬 Health Tips</button>
+    </div>
+
+    <div id="admin-content" class="card"></div>
+
+    <a href="index.html" class="back">⬅️ Back to Home</a>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

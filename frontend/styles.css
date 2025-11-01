@@ -1,11 +1,11 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #c9f3f9, #fde2e4, #e2f0cb, #fce1e4);
-  background-size: 300% 300%;
+  background: linear-gradient(135deg, #d4f1f4, #fcd5ce, #e2f0cb, #cdb4db);
+  background-size: 400% 400%;
   animation: gradientShift 10s ease infinite;
   text-align: center;
-  color: #333;
   padding: 40px;
+  color: #333;
 }
 
 @keyframes gradientShift {
@@ -14,35 +14,74 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-h1, h2 {
-  color: #222;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: auto;
 }
 
-.btn, button {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 24px;
-  border-radius: 25px;
-  text-decoration: none;
-  background-color: #a0e7e5;
+h1, h2, h3 {
   color: #333;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-
-.btn:hover, button:hover {
-  background-color: #b4f8c8;
-  transform: scale(1.05);
 }
 
 input {
+  display: block;
+  margin: 8px auto;
   padding: 10px;
-  margin: 6px;
-  border: 1px solid #ccc;
+  width: 80%;
   border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
-form {
+.btn, button {
+  margin: 10px;
+  padding: 12px 20px;
+  background-color: #b4f8c8;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover, button:hover {
+  background-color: #a0e7e5;
+  transform: scale(1.05);
+}
+
+.result-box {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+  font-size: 18px;
+}
+
+.suggestions {
+  margin-top: 25px;
+  text-align: left;
+  display: inline-block;
+}
+
+ul {
+  text-align: left;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.back {
+  display: inline-block;
   margin-top: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
 }

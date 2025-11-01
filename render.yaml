@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: indradhanu-backend
+    name: indradhanu
     env: python
     region: oregon
     plan: free
@@ -11,8 +11,3 @@ services:
         value: 10000
       - key: PYTHON_VERSION
         value: 3.10.0
-
-  - type: web
-    name: indradhanu-frontend
-    env: static
-    staticPublishPath: frontend

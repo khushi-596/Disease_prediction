@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Disease Risk Prediction</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Citizen Portal - Indradhanu</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h2>🧠 Predict Disease Risk</h2>
-  <form id="predictForm">
-    <input type="number" step="any" id="Temp" placeholder="Temperature (°C)" required>
-    <input type="number" step="any" id="Humidity" placeholder="Humidity (%)" required>
-    <input type="number" step="any" id="Rainfall" placeholder="Rainfall (mm)" required>
-    <input type="number" step="any" id="Wqi" placeholder="WQI" required>
-    <input type="number" step="any" id="Ph" placeholder="pH" required>
-    <input type="number" step="any" id="Turbidity" placeholder="Turbidity" required>
-    <input type="number" step="any" id="Cases_Lag1" placeholder="Cases Lag 1" required>
-    <input type="number" step="any" id="Cases_7d_Avg" placeholder="7-Day Avg Cases" required>
-    <input type="number" step="any" id="Rain_3d_Avg" placeholder="3-Day Rain Avg" required>
-    <button type="submit">Predict Risk 🌡️</button>
-  </form>
-  <p id="result"></p>
+  <div class="container fade-in">
+    <h2>🏙️ Check Risk in Your Area</h2>
+
+    <form id="citizenForm">
+      <select id="Ward" required>
+        <option value="">Select Your Ward</option>
+        <option>Ward-1</option>
+        <option>Ward-2</option>
+        <option>Ward-3</option>
+        <option>Ward-4</option>
+        <option>Ward-5</option>
+        <option>Ward-6</option>
+        <option>Ward-7</option>
+        <option>Ward-8</option>
+        <option>Ward-9</option>
+        <option>Ward-10</option>
+      </select>
+
+      <input type="date" id="Date" required />
+      <button type="submit">Check Risk 🌡️</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+
+    <div class="suggestions">
+      <h3>💡 Health Suggestions</h3>
+      <ul id="tips">
+        <li>Drink clean, filtered water.</li>
+        <li>Keep your surroundings free from standing water.</li>
+        <li>Use mosquito repellents during evenings.</li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="back">⬅️ Back to Home</a>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,98 @@
+{
+  "wards": [
+    {
+      "ward": "Ward-1",
+      "reported_cases": 49.02,
+      "rainfall": 103.44,
+      "temp": 26.58,
+      "humidity": 56.84,
+      "wqi": 70.73,
+      "risk_level": "LOW"
+    },
+    {
+      "ward": "Ward-10",
+      "reported_cases": 59.27,
+      "rainfall": 93.81,
+      "temp": 24.45,
+      "humidity": 55.96,
+      "wqi": 68.16,
+      "risk_level": "HIGH"
+    },
+    {
+      "ward": "Ward-2",
+      "reported_cases": 53.21,
+      "rainfall": 104.95,
+      "temp": 26.72,
+      "humidity": 56.55,
+      "wqi": 69.1,
+      "risk_level": "LOW"
+    },
+    {
+      "ward": "Ward-3",
+      "reported_cases": 65.18,
+      "rainfall": 92.97,
+      "temp": 24.49,
+      "humidity": 55.19,
+      "wqi": 68.23,
+      "risk_level": "HIGH"
+    },
+    {
+      "ward": "Ward-4",
+      "reported_cases": 59.77,
+      "rainfall": 116.46,
+      "temp": 26.91,
+      "humidity": 56.52,
+      "wqi": 69.69,
+      "risk_level": "HIGH"
+    },
+    {
+      "ward": "Ward-5",
+      "reported_cases": 72.19,
+      "rainfall": 120.19,
+      "temp": 26.47,
+      "humidity": 56.8,
+      "wqi": 69.09,
+      "risk_level": "HIGH"
+    },
+    {
+      "ward": "Ward-6",
+      "reported_cases": 55.18,
+      "rainfall": 99.89,
+      "temp": 27.52,
+      "humidity": 56.25,
+      "wqi": 72.01,
+      "risk_level": "LOW"
+    },
+    {
+      "ward": "Ward-7",
+      "reported_cases": 52.01,
+      "rainfall": 98.34,
+      "temp": 24.3,
+      "humidity": 59.52,
+      "wqi": 66.28,
+      "risk_level": "LOW"
+    },
+    {
+      "ward": "Ward-8",
+      "reported_cases": 60.79,
+      "rainfall": 95.66,
+      "temp": 27.72,
+      "humidity": 60.27,
+      "wqi": 68.29,
+      "risk_level": "HIGH"
+    },
+    {
+      "ward": "Ward-9",
+      "reported_cases": 55.86,
+      "rainfall": 98.43,
+      "temp": 24.73,
+      "humidity": 56.45,
+      "wqi": 67.94,
+      "risk_level": "LOW"
+    }
+  ],
+  "metadata": {
+    "total_wards": 10,
+    "avg_cases": 58.33
+  }
+}
